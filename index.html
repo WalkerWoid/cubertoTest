@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cuberto</title>
+
+    <link rel="stylesheet" href="style-sass/style.css">
+</head>
+<body>
+
+<!--<div class="cursor"></div>-->
+
+<div class="header">
+    <a href="#" class="logo">cuberto</a>
+    <div class="header__menu-text">Меню</div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="content__header">
+            <div class="div">Всегда на связи!</div>
+            <div class="div">Пишите нам
+                <span>
+                    <img src="https://cuberto.ru/assets/img/emoji/lg/1F44B@2x.png"
+                         alt="hand-img" class="hand-img">
+                </span>
+            </div>
+        </div>
+
+        <form action="#" class="form">
+            <div class="form__header">Меня интересует...</div>
+
+            <div onmousedown="return false" class="form__button__input"></div>
+
+            <div>
+                <div class="form__info-div">
+                    <input class="form__info" type="text" placeholder="Ваше имя">
+                </div>
+
+                <div class="form__info-div">
+                    <input class="form__info" type="email" placeholder="Ваш email">
+                </div>
+
+                <div class="form__info-div">
+                    <textarea class="form__info" name="aboutYou" cols="30" rows="1" placeholder="Расскажите о своем проекте"></textarea>
+                </div>
+            </div>
+
+            <div class="budget__header">Планируемый бюджет (USD)</div>
+
+            <div class="form__radio" onmousedown="return false"></div>
+
+            <button onclick="clickSet()" class="btn-submit" type="button">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container footer__container">
+        <div class="footer__header">Есть проект?
+            <span class="footer__header-write">Напишите нам</span>
+            <span class="footer__span footer__span_left"></span>
+            <span class="footer__span footer__span_right"></span>
+        </div>
+
+        <div class="info">
+            <div class="info__left">
+                <div class="info__mail">info@cuberto.com
+                    <span class="footer__span footer__span_left_zero"></span>
+                    <span class="footer__span footer__span_right_zero"></span>
+                </div>
+                <div class="info__address-block">
+                    <div class="info__city">190005, Санкт-петербург,</div>
+                    <div class="info__street">Троицкий проспект 4B</div>
+                    <div class="info__phone">
+                        +7 812 600 2116
+                        <span class="info__phone_spanAnim info__phone_spanAnim_white"></span>
+                    </div>
+                </div>
+                <div class="info__privacy">
+                    Privacy Policy
+                    <span class="info__phone_spanAnim info__phone_spanAnim_gray"></span>
+                </div>
+            </div>
+            <div class="info__right">
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                                    alt="" class="footer__social_img">
+                    </a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                             alt="" class="footer__social_img">
+                    </a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                             alt="" class="footer__social_img">
+                    </a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                             alt="" class="footer__social_img">
+                    </a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                             alt="" class="footer__social_img">
+                    </a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="http://cdn.onlinewebfonts.com/svg/download_24591.png"
+                             alt="" class="footer__social_img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-icon">
+    <span class="menu-icon__span menu-icon__span_top menu-icon__span_visible"></span>
+    <span class="menu-icon__span menu-icon__span_bottom menu-icon__span_visible"></span>
+</div>
+
+<div class="menu-wall">
+    <a href="#" class="logo menu__logo">cuberto</a>
+
+    <div class="menu">
+        <div class="menu__cross">
+            <span class="menu__cross-line menu__cross-line_hidden"></span>
+            <span class="menu__cross-line menu__cross-line_hidden"></span>
+        </div>
+
+        <div class="social">
+            <div class="menu__header">Соцсети</div>
+
+            <ul class="menu__ul">
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Facebook</a>
+                    <span class="menu__link_hide">Facebook</span>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Behance</a>
+                    <span class="menu__link_hide">Behance</span>
+
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Dribble</a>
+                    <span class="menu__link_hide">Dribble</span>
+
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Instagram</a>
+                    <span class="menu__link_hide">Instagram</span>
+
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">YouTube</a>
+                    <span class="menu__link_hide">YouTube</span>
+
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Patreon</a>
+                    <span class="menu__link_hide">Patreon</span>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="menu__ul_about">
+            <li><div class="menu__header">Меню</div></li>
+            <li class="menu__list">
+                <a href="#" class="about__link">Работы</a>
+                <span class="about__link_hide">Работы</span>
+            </li>
+            <li class="menu__list">
+                <a href="#" class="about__link">О нас</a>
+                <span class="about__link_hide">О нас</span>
+            </li>
+            <li class="menu__list">
+                <a href="#" class="about__link">Услуги</a>
+                <span class="about__link_hide">Услуги</span>
+            </li>
+            <li class="menu__list">
+                <a href="#" class="about__link about__link_last">Контакты</a>
+                <span class="about__link_hide">Контакты</span>
+            </li>
+        </ul>
+
+        <div class="write-to-us">
+            <div class="write-text">Напишите нам</div>
+            <div class="menu__email">info@ceberto.com
+                <span class="menu__email_span menu__email_span_left"></span>
+                <span class="menu__email_span menu__email_span_right"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
