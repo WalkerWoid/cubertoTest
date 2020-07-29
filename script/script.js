@@ -7,7 +7,7 @@ class Page {
     _initPage() {
         this._initArrButtons();
 
-        // let cursor = new Cursor();
+        let cursor = new Cursor();
         let menu = new Menu();
         let checkButtons = new ButtonAll(this.arrCheckButtons, 'form__button__input');
         let radioButtons = new ButtonAll(this.radioButtons, 'form__radio');
@@ -110,6 +110,8 @@ class Menu {
         this.menuContainer = document.querySelector('.menu');
         this.menuIconSpans = document.querySelectorAll('.menu-icon__span');
         this.menuCrossSpans = document.querySelectorAll('.menu__cross-line');
+        this.cursor = document.querySelector('.cursor');
+
         this._menuInit();
     }
     _menuInit() {
@@ -131,6 +133,8 @@ class Menu {
         menuWall.classList.add('menu-wall_open');
         document.body.style.overflowY = 'hidden';
         menuContainer.classList.add('menu__open');
+        this.cursor.classList.add('cursor10');
+
         for (const menuIconSpan of this.menuIconSpans) {
             menuIconSpan.classList.remove('menu-icon__span_visible');
             menuIconSpan.classList.add('menu-icon__span_hide')
@@ -145,6 +149,7 @@ class Menu {
         menuWall.classList.remove('menu-wall_open');
         document.body.style.overflowY = 'auto';
         menuContainer.classList.remove('menu__open');
+        this.cursor.classList.remove('cursor10');
 
         for (const menuIconSpan of this.menuIconSpans) {
             menuIconSpan.classList.remove('menu-icon__span_hide');
@@ -157,8 +162,8 @@ class Menu {
         }
     }
 }
-const page = new Page();
 
+const page = new Page();
 
 // проверка выбранных кнопок
 const allUncheckedButtons = document.querySelectorAll('.button__input');
@@ -186,12 +191,18 @@ for (let button of allFormButtons) {
         const target = event.target;
         const parentTarget = target.parentNode;
         const blackWall = parentTarget.querySelector('.buttonBlack');
+        const inputChecked = parentTarget.querySelector('.button__input');
+        console.log(inputChecked.checked);
         if (target.classList.contains('button__input')) {
-            if (!blackWall.classList.contains('buttonBlack_top')) {
+            if (inputChecked.checked) {
+                console.log('выбрано');
                 blackWall.classList.add('buttonBlack_top');
+                blackWall.classList.remove('buttonBlack_bottom');
                 parentTarget.querySelector('.button__label').classList.add('button__white');
                 parentTarget.querySelector('.button-hidden').classList.add('button__white');
-            }else {
+            } else {
+                console.log('не выбрано');
+                blackWall.classList.add('buttonBlack_bottom');
                 blackWall.classList.remove('buttonBlack_top');
                 parentTarget.querySelector('.button__label').classList.remove('button__white');
                 parentTarget.querySelector('.button-hidden').classList.remove('button__white');
