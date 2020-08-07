@@ -13,10 +13,10 @@
 
 <div class="cursor"></div>
 
-<div class="header">
+<header class="header">
     <a href="#" class="logo">cuberto</a>
     <div class="header__menu-text">Меню</div>
-</div>
+</header>
 
 <div class="content">
     <div class="container">
@@ -30,35 +30,37 @@
             </div>
         </div>
 
-        <form action="#" class="form">
-            <div class="form__header">Меня интересует...</div>
+        <section>
+            <form action="#" class="form">
+                <div class="form__header">Меня интересует...</div>
 
-            <div onmousedown="return false" class="form__button__input"></div>
+                <div onmousedown="return false" class="form__button__input"></div>
 
-            <div>
-                <div class="form__info-div">
-                    <input class="form__info" type="text" placeholder="Ваше имя">
+                <div>
+                    <div class="form__info-div">
+                        <input class="form__info" type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form__info-div">
+                        <input class="form__info" type="email" placeholder="Ваш email">
+                    </div>
+
+                    <div class="form__info-div">
+                        <textarea class="form__info" name="aboutYou" cols="30" rows="1" placeholder="Расскажите о своем проекте"></textarea>
+                    </div>
                 </div>
 
-                <div class="form__info-div">
-                    <input class="form__info" type="email" placeholder="Ваш email">
-                </div>
+                <div class="budget__header">Планируемый бюджет (USD)</div>
 
-                <div class="form__info-div">
-                    <textarea class="form__info" name="aboutYou" cols="30" rows="1" placeholder="Расскажите о своем проекте"></textarea>
-                </div>
-            </div>
+                <div class="form__radio" onmousedown="return false"></div>
 
-            <div class="budget__header">Планируемый бюджет (USD)</div>
-
-            <div class="form__radio" onmousedown="return false"></div>
-
-            <button onclick="clickSet()" class="btn-submit" type="button">Отправить</button>
-        </form>
+                <button onclick="clickSet()" class="btn-submit" type="button">Отправить</button>
+            </form>
+        </section>
     </div>
 </div>
 
-<div class="footer">
+<footer class="footer">
     <div class="container footer__container">
         <div class="footer__header">Есть проект?
             <span class="footer__header-write">Напишите нам</span>
@@ -130,7 +132,7 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
 
 <div class="menu-icon">
     <span class="menu-icon__span menu-icon__span_top menu-icon__span_visible"></span>
@@ -149,65 +151,72 @@
         <div class="social">
             <div class="menu__header">Соцсети</div>
 
-            <ul class="menu__ul">
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Facebook</a>
-                    <span class="menu__link_hide">Facebook</span>
-                </li>
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Behance</a>
-                    <span class="menu__link_hide">Behance</span>
+            <nav>
+                <ul class="menu__ul">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Facebook</a>
+                        <span class="menu__link_hide">Facebook</span>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Behance</a>
+                        <span class="menu__link_hide">Behance</span>
 
-                </li>
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Dribble</a>
-                    <span class="menu__link_hide">Dribble</span>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Dribble</a>
+                        <span class="menu__link_hide">Dribble</span>
 
-                </li>
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Instagram</a>
-                    <span class="menu__link_hide">Instagram</span>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Instagram</a>
+                        <span class="menu__link_hide">Instagram</span>
 
-                </li>
-                <li class="menu__list">
-                    <a href="#" class="menu__link">YouTube</a>
-                    <span class="menu__link_hide">YouTube</span>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">YouTube</a>
+                        <span class="menu__link_hide">YouTube</span>
 
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Patreon</a>
+                        <span class="menu__link_hide">Patreon</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav>
+            <ul class="menu__ul_about">
+                <li><div class="menu__header">Меню</div></li>
+
+                <li class="menu__list">
+                    <a href="#" class="about__link">Работы</a>
+                    <span class="about__link_hide">Работы</span>
                 </li>
                 <li class="menu__list">
-                    <a href="#" class="menu__link">Patreon</a>
-                    <span class="menu__link_hide">Patreon</span>
+                    <a href="#" class="about__link">О нас</a>
+                    <span class="about__link_hide">О нас</span>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="about__link">Услуги</a>
+                    <span class="about__link_hide">Услуги</span>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="about__link about__link_last">Контакты</a>
+                    <span class="about__link_hide">Контакты</span>
                 </li>
             </ul>
-        </div>
+        </nav>
 
-        <ul class="menu__ul_about">
-            <li><div class="menu__header">Меню</div></li>
-            <li class="menu__list">
-                <a href="#" class="about__link">Работы</a>
-                <span class="about__link_hide">Работы</span>
-            </li>
-            <li class="menu__list">
-                <a href="#" class="about__link">О нас</a>
-                <span class="about__link_hide">О нас</span>
-            </li>
-            <li class="menu__list">
-                <a href="#" class="about__link">Услуги</a>
-                <span class="about__link_hide">Услуги</span>
-            </li>
-            <li class="menu__list">
-                <a href="#" class="about__link about__link_last">Контакты</a>
-                <span class="about__link_hide">Контакты</span>
-            </li>
-        </ul>
-
-        <div class="write-to-us">
-            <div class="write-text">Напишите нам</div>
-            <div class="menu__email">info@ceberto.com
-                <span class="menu__email_span menu__email_span_left"></span>
-                <span class="menu__email_span menu__email_span_right"></span>
+        <section>
+            <div class="write-to-us">
+                <div class="write-text">Напишите нам</div>
+                <div class="menu__email">info@ceberto.com
+                    <span class="menu__email_span menu__email_span_left"></span>
+                    <span class="menu__email_span menu__email_span_right"></span>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
